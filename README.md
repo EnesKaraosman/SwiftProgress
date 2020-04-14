@@ -6,6 +6,12 @@ LinearProgress bar & CircularProgress bar for SwiftUI.
 
 ![](https://github.com/EnesKaraosman/SwiftProgress/blob/master/Sources/progress-demo.gif)
 
+### Installation
+
+#### Swift Package Manager
+
+Add via https://github.com/EnesKaraosman/SwiftProgress.git
+
 ### Usage
 
 #### LinearProgress

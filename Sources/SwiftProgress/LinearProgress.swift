@@ -23,6 +23,15 @@ public struct LinearProgress: View {
     private var gradient: LinearGradient?
     private let fillAxis: FillAxis
     
+    private var animatableData: Double {
+        get {
+            return Double(progress)
+        }
+        set {
+            progress = CGFloat(newValue)
+        }
+    }
+    
     private var overlay: AnyView {
         if self.foregroundColor != nil {
             return AnyView( Rectangle().foregroundColor(self.foregroundColor) )

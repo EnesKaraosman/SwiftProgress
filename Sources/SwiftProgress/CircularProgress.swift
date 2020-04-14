@@ -16,6 +16,15 @@ public struct CircularProgress: View {
     private let backgroundColor: Color
     private var gradient: LinearGradient?
     
+    private var animatableData: Double {
+        get {
+            return Double(progress)
+        }
+        set {
+            progress = CGFloat(newValue)
+        }
+    }
+    
     private var overlay: AnyView {
         if self.foregroundColor != nil {
             return AnyView(

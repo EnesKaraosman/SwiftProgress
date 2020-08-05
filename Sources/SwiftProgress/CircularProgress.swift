@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public struct CircularProgress: View {
+public struct CircularProgress: Animatable, View {
     
     /// Between 0 - 100
     private var progress: CGFloat
@@ -16,7 +16,7 @@ public struct CircularProgress: View {
     private let backgroundColor: Color
     private var gradient: LinearGradient?
     
-    private var animatableData: Double {
+    public var animatableData: Double {
         get {
             return Double(progress)
         }

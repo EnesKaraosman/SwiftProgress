@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public struct LinearProgress: View {
+public struct LinearProgress: Animatable, View {
     
     public enum FillAxis {
         case horizontal
@@ -23,7 +23,7 @@ public struct LinearProgress: View {
     private var gradient: LinearGradient?
     private let fillAxis: FillAxis
     
-    private var animatableData: Double {
+    public var animatableData: Double {
         get {
             return Double(progress)
         }
